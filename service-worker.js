@@ -1,4 +1,4 @@
-var cacheTimestamp = '1489171871272';
+var cacheTimestamp = '1489172245842';
 var cacheName = 'thien-notes-shell-v' + cacheTimestamp;
 var dataCacheName = 'thien-notes-data-v' + cacheTimestamp;
 var filesToCache = [
@@ -8,9 +8,9 @@ var filesToCache = [
  '/work/index.html',
  '/contact/index.html',
  '/manifest.json',
- '/static/css/app.f3146c638fee2b03a136226490124ae9.css',
- '/static/js/app.625886c86278d8f691bf.js',
- '/static/js/manifest.a3c2076591b4bf380116.js',
+ '/static/css/app.2b51afcf41fc41f70db15b2c96f1b94a.css',
+ '/static/js/app.2d495befb808e8633704.js',
+ '/static/js/manifest.b9d30b6c44f479ce9343.js',
  '/static/js/vendor.931eb9d90bcd68bbf983.js',
 ];
 
