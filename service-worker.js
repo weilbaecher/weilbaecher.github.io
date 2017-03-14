@@ -1,4 +1,4 @@
-var cacheTimestamp = '1489173933989';
+var cacheTimestamp = '1489467528749';
 var cacheName = 'thien-notes-shell-v' + cacheTimestamp;
 var dataCacheName = 'thien-notes-data-v' + cacheTimestamp;
 var filesToCache = [
@@ -8,10 +8,10 @@ var filesToCache = [
  '/work/index.html',
  '/contact/index.html',
  '/manifest.json',
- '/static/css/app.28615a988363ed1d0659239ad2163791.css',
- '/static/js/app.4f3f4f0b8edb78dea149.js',
- '/static/js/manifest.05314c6e40fbbd6fd6b1.js',
- '/static/js/vendor.c1821008c8d3fcb68c42.js',
+ '/static/css/app.c7094ccce2c923aeb2d9733a2c794dd5.css',
+ '/static/js/app.06b3633461b10e54d03d.js',
+ '/static/js/manifest.f1700fb188f564a608c1.js',
+ '/static/js/vendor.d3d6dab2727663ee7e45.js',
 ];
 
 self.addEventListener('install', function(e) {
