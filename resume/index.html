@@ -25,8 +25,8 @@ const messaging = firebase.messaging();
     console.log('I have permission');
 
     return messaging.getToken()
-  .then(function(currentToken) {
-    console.log(currentToken);
+  .then(function(token) {
+    console.log(token);
   })
   .catch(function(err) {
     console.log('An error occurred while retrieving token. ', err);
@@ -36,4 +36,8 @@ const messaging = firebase.messaging();
 
   }).catch(function(err){
     console.log('Error');
-  });</script></body></html>
+  });
+
+messaging.onMessage(function(payload) {
+console.log('onMessage: ', payload);
+});</script></body></html>

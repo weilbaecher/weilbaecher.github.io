@@ -1,4 +1,4 @@
-var cacheTimestamp = '1489694728969';
+var cacheTimestamp = '1489700179282';
 var cacheName = 'thien-notes-shell-v' + cacheTimestamp;
 var dataCacheName = 'thien-notes-data-v' + cacheTimestamp;
 var filesToCache = [
