@@ -1,4 +1,4 @@
-var cacheTimestamp = '1489700179282';
+var cacheTimestamp = '1489717697935';
 var cacheName = 'thien-notes-shell-v' + cacheTimestamp;
 var dataCacheName = 'thien-notes-data-v' + cacheTimestamp;
 var filesToCache = [
@@ -30,7 +30,7 @@ self.addEventListener('activate', function(e) {
 		caches.keys().then(function(keyList) {
 			return Promise.all(keyList.map(function(key) {
 				if (key !== cacheName && key !== dataCacheName) {
-					console.log('[Service Workder] Removing old cache', key);
+					console.log('[Service Worker] Removing old cache', key);
 					return caches.delete(key);
 				}
 			}));
