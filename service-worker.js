@@ -1,6 +1,6 @@
-var cacheTimestamp = '1489717697935';
-var cacheName = 'thien-notes-shell-v' + cacheTimestamp;
-var dataCacheName = 'thien-notes-data-v' + cacheTimestamp;
+var cacheTimestamp = '1489727638942';
+var cacheName = 'andy-dev-shell-v' + cacheTimestamp;
+var dataCacheName = 'andy-dev-data-v' + cacheTimestamp;
 var filesToCache = [
  '/',
  '/about/index.html',
@@ -9,8 +9,8 @@ var filesToCache = [
  '/contact/index.html',
  '/manifest.json',
  '/static/css/app.1f427a887a4979c7a968fe87fdf6b9ca.css',
- '/static/js/app.3fa33988893b5147c8d2.js',
- '/static/js/manifest.2ec51811dbf3fa36e901.js',
+ '/static/js/app.0eda29e9892e79976fc5.js',
+ '/static/js/manifest.c2fc7e6e750055289c83.js',
  '/static/js/vendor.07737b8a393e6c89b3df.js',
 ];
 

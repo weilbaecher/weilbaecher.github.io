@@ -9,7 +9,7 @@
               </div></div></div></div> <div class="resume-right"><div class="resume-section-title">Personal</div> <div class="employment-block"><div class="personal-section"><div class="personal-title">Special Skills</div> <div class="employment-duties">Skilled with PC and MAC computers including installing new hardware. Over 10 years of experience using the Adobe Creative Suite. Experienced in HTML5, CSS, jQuery, Javascript, Wordpress, SEO, Analytics, Social/AdWords Advertising, Github, Bootstrap, and more.
               </div></div></div> <div class="employment-block"><div class="personal-section"><div class="personal-title">Activites</div> <div class="employment-duties">Organize league signups for a local sports organization. Maintain a vegetable garden in my backyard. Create original music and record live music. Read books on Web Development and keep up with the trends.
               </div></div></div> <div class="employment-block"><div class="personal-section"><div class="personal-title">Interests</div> <div class="employment-duties">Computers, graphic design, gardening, music production, kickball.
-              </div></div></div> <div class="resume-section-title">References</div> <div class="employment-block"><div class="personal-section"><div class="personal-title">Available on Request</div></div></div></div></div></article></div></div></div></div> <div></div> <div class="nav-wrapper"><div class="triangles-above"></div> <nav class="bottomNav"><ul><a href="/about" class=""><li>About</li></a> <a href="/resume" class="active"><li>Resume</li></a> <a href="/work" class=""><li>Work</li></a> <a href="/contact" class=""><li>Contact</li></a></ul></nav></div></div><script type="text/javascript" src="/static/js/manifest.2ec51811dbf3fa36e901.js"></script><script type="text/javascript" src="/static/js/vendor.07737b8a393e6c89b3df.js"></script><script type="text/javascript" src="/static/js/app.3fa33988893b5147c8d2.js"></script><script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script><script>// Initialize Firebase
+              </div></div></div> <div class="resume-section-title">References</div> <div class="employment-block"><div class="personal-section"><div class="personal-title">Available on Request</div></div></div></div></div></article></div></div></div></div> <div></div> <div class="nav-wrapper"><div class="triangles-above"></div> <nav class="bottomNav"><ul><a href="/about" class=""><li>About</li></a> <a href="/resume" class="active"><li>Resume</li></a> <a href="/work" class=""><li>Work</li></a> <a href="/contact" class=""><li>Contact</li></a></ul></nav></div></div><script type="text/javascript" src="/static/js/manifest.c2fc7e6e750055289c83.js"></script><script type="text/javascript" src="/static/js/vendor.07737b8a393e6c89b3df.js"></script><script type="text/javascript" src="/static/js/app.0eda29e9892e79976fc5.js"></script><script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script><script>// Initialize Firebase
   var config = {
     apiKey: "AIzaSyBlaHmVZSckMomiI3BbT0oxJCBbbGjqd54",
     authDomain: "push-test-161718.firebaseapp.com",
@@ -23,7 +23,6 @@ const messaging = firebase.messaging();
   messaging.requestPermission()
   .then(function(){
     console.log('I have permission');
-
     return messaging.getToken()
   .then(function(token) {
     console.log(token);
