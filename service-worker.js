@@ -1,4 +1,4 @@
-var cacheTimestamp = '1489856385111';
+var cacheTimestamp = '1489857306416';
 var cacheName = 'andy-dev-shell-v' + cacheTimestamp;
 var dataCacheName = 'andy-dev-data-v' + cacheTimestamp;
 var filesToCache = [
@@ -44,7 +44,7 @@ self.addEventListener('push', function(event) {
 
   var notificationOptions = {
     body: 'Hello everybody!',
-    icon: './images/hipstercat.jpg',
+    icon: './static/images/afw-logo-black.png',
     tag: 'simple-push-demo-notification'
   };    
 
