@@ -1,4 +1,4 @@
-var cacheTimestamp = '1489867782364';
+var cacheTimestamp = '1489869248245';
 var cacheName = 'andy-dev-shell-v' + cacheTimestamp;
 var dataCacheName = 'andy-dev-data-v' + cacheTimestamp;
 var filesToCache = [
@@ -43,12 +43,22 @@ self.addEventListener('push', function(event) {
   console.log('Received a push message', event);
 
   var notificationOptions = {
-    body: 'Hello everybody!',
-    icon: './static/images/afw-logo-black.png',
+    body: 'Modular Scale and Vertical Rhythm in Responsive Web Design - I discuss all the pitfalls that come along with responsive typography. Click here to check it out!',
+    icon: './static/images/new-post.jpg',
     tag: 'simple-push-demo-notification'
   };    
 
   return self.registration.showNotification('Check Out My New Blog Post', notificationOptions);
+});
+
+self.addEventListener('notificationclick', function(event) {
+  console.log('[Service Worker] Notification click Received.');
+
+  event.notification.close();
+
+  event.waitUntil(
+    clients.openWindow('https://developers.google.com/web/')
+  );
 });
 
 self.addEventListener('fetch', function(e) {
