@@ -1,4 +1,4 @@
-var cacheTimestamp = '1489863923966';
+var cacheTimestamp = '1489867782364';
 var cacheName = 'andy-dev-shell-v' + cacheTimestamp;
 var dataCacheName = 'andy-dev-data-v' + cacheTimestamp;
 var filesToCache = [
@@ -9,9 +9,9 @@ var filesToCache = [
  '/contact/index.html',
  '/manifest.json',
  '/static/css/app.e06b8f34d140eba1dd227d0884f11607.css',
- '/static/js/app.5b26060b584df86880c4.js',
- '/static/js/manifest.fbf91d5b4a6b752251f3.js',
- '/static/js/vendor.c7bd05f5026881ae3ff2.js',
+ '/static/js/app.182d2b1840d156a246c9.js',
+ '/static/js/manifest.9986c96f764d04f4c4e6.js',
+ '/static/js/vendor.ddc9bf5ab6e66ebc2731.js',
 ];
 
 self.addEventListener('install', function(e) {
@@ -44,11 +44,11 @@ self.addEventListener('push', function(event) {
 
   var notificationOptions = {
     body: 'Hello everybody!',
-    icon: './static/images/new-post.jpg',
+    icon: './static/images/afw-logo-black.png',
     tag: 'simple-push-demo-notification'
-  };
+  };    
 
-  return self.registration.showNotification('Important message', notificationOptions);
+  return self.registration.showNotification('Check Out My New Blog Post', notificationOptions);
 });
 
 self.addEventListener('fetch', function(e) {
