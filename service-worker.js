@@ -1,4 +1,4 @@
-var cacheTimestamp = '1489728843961';
+var cacheTimestamp = '1489856385111';
 var cacheName = 'andy-dev-shell-v' + cacheTimestamp;
 var dataCacheName = 'andy-dev-data-v' + cacheTimestamp;
 var filesToCache = [
@@ -8,10 +8,10 @@ var filesToCache = [
  '/work/index.html',
  '/contact/index.html',
  '/manifest.json',
- '/static/css/app.1f427a887a4979c7a968fe87fdf6b9ca.css',
- '/static/js/app.3fa33988893b5147c8d2.js',
- '/static/js/manifest.2ec51811dbf3fa36e901.js',
- '/static/js/vendor.07737b8a393e6c89b3df.js',
+ '/static/css/app.e06b8f34d140eba1dd227d0884f11607.css',
+ '/static/js/app.5b26060b584df86880c4.js',
+ '/static/js/manifest.fbf91d5b4a6b752251f3.js',
+ '/static/js/vendor.c7bd05f5026881ae3ff2.js',
 ];
 
 self.addEventListener('install', function(e) {
@@ -37,6 +37,18 @@ self.addEventListener('activate', function(e) {
 		})
 	);
 	return self.clients.claim();
+});
+
+self.addEventListener('push', function(event) {  
+  console.log('Received a push message', event);
+
+  var notificationOptions = {
+    body: 'Hello everybody!',
+    icon: './images/hipstercat.jpg',
+    tag: 'simple-push-demo-notification'
+  };    
+
+  return self.registration.showNotification('Important message', notificationOptions);
 });
 
 self.addEventListener('fetch', function(e) {
