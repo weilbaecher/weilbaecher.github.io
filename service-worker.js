@@ -1,4 +1,4 @@
-var cacheTimestamp = '1489858316405';
+var cacheTimestamp = '1489858542857';
 var cacheName = 'andy-dev-shell-v' + cacheTimestamp;
 var dataCacheName = 'andy-dev-data-v' + cacheTimestamp;
 var filesToCache = [
@@ -47,12 +47,9 @@ self.addEventListener('push', function(event) {
     icon: './static/images/afw-logo-black.png',
     tag: 'simple-push-demo-notification'
   };
-  notification.onclick = function(event) {
-  event.preventDefault(); // prevent the browser from focusing the Notification's tab
-  window.open('https://tympanus.net/codrops/', '_blank');
-  }
 
   return self.registration.showNotification('I just added a blog post!', notificationOptions);
+
 });
 
 self.addEventListener('fetch', function(e) {
