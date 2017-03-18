@@ -1,4 +1,4 @@
-var cacheTimestamp = '1489858542857';
+var cacheTimestamp = '1489863923966';
 var cacheName = 'andy-dev-shell-v' + cacheTimestamp;
 var dataCacheName = 'andy-dev-data-v' + cacheTimestamp;
 var filesToCache = [
@@ -39,17 +39,16 @@ self.addEventListener('activate', function(e) {
 	return self.clients.claim();
 });
 
-self.addEventListener('push', function(event) {  
+self.addEventListener('push', function(event) {
   console.log('Received a push message', event);
 
   var notificationOptions = {
-    body: 'Click Here to Check it Out - Modular Scale in responsive Design',
-    icon: './static/images/afw-logo-black.png',
+    body: 'Hello everybody!',
+    icon: './static/images/new-post.jpg',
     tag: 'simple-push-demo-notification'
   };
 
-  return self.registration.showNotification('I just added a blog post!', notificationOptions);
-
+  return self.registration.showNotification('Important message', notificationOptions);
 });
 
 self.addEventListener('fetch', function(e) {
