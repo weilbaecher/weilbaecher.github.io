@@ -1,4 +1,4 @@
-var cacheTimestamp = '1489872903392';
+var cacheTimestamp = '1489874798110';
 var cacheName = 'andy-dev-shell-v' + cacheTimestamp;
 var dataCacheName = 'andy-dev-data-v' + cacheTimestamp;
 var filesToCache = [
@@ -43,12 +43,12 @@ self.addEventListener('push', function(event) {
   console.log('Received a push message', event);
 
   var notificationOptions = {
-    body: 'Modular Scale and Vertical Rhythm in Responsive Web Design - Click here to check it out',
+    body: 'Modular Scale in Responsive Web Design - Click here to check it out',
     icon: './static/images/new-post.jpg',
     tag: 'simple-push-demo-notification'
   };
 
-  return self.registration.showNotification('Check Out My New Blog Post', notificationOptions);
+  return self.registration.showNotification('Check Out My New Blog Post!', notificationOptions);
 });
 
 self.addEventListener('notificationclick', function(event) {
