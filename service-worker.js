@@ -1,4 +1,4 @@
-var cacheTimestamp = '1489869248245';
+var cacheTimestamp = '1489872903392';
 var cacheName = 'andy-dev-shell-v' + cacheTimestamp;
 var dataCacheName = 'andy-dev-data-v' + cacheTimestamp;
 var filesToCache = [
@@ -8,9 +8,9 @@ var filesToCache = [
  '/work/index.html',
  '/contact/index.html',
  '/manifest.json',
- '/static/css/app.e06b8f34d140eba1dd227d0884f11607.css',
- '/static/js/app.182d2b1840d156a246c9.js',
- '/static/js/manifest.9986c96f764d04f4c4e6.js',
+ '/static/css/app.3b93d54270ea09ad67f6f9e263ee5f63.css',
+ '/static/js/app.cf475317807028f2b8e3.js',
+ '/static/js/manifest.119e568a9d85d5b4ad48.js',
  '/static/js/vendor.ddc9bf5ab6e66ebc2731.js',
 ];
 
@@ -43,10 +43,10 @@ self.addEventListener('push', function(event) {
   console.log('Received a push message', event);
 
   var notificationOptions = {
-    body: 'Modular Scale and Vertical Rhythm in Responsive Web Design - I discuss all the pitfalls that come along with responsive typography. Click here to check it out!',
+    body: 'Modular Scale and Vertical Rhythm in Responsive Web Design - Click here to check it out',
     icon: './static/images/new-post.jpg',
     tag: 'simple-push-demo-notification'
-  };    
+  };
 
   return self.registration.showNotification('Check Out My New Blog Post', notificationOptions);
 });
@@ -57,7 +57,7 @@ self.addEventListener('notificationclick', function(event) {
   event.notification.close();
 
   event.waitUntil(
-    clients.openWindow('https://developers.google.com/web/')
+    clients.openWindow('https://blog.tatthien.com/post/development-tool')
   );
 });
 
