@@ -1,4 +1,4 @@
-var cacheTimestamp = '1489874798110';
+var cacheTimestamp = '1489886707218';
 var cacheName = 'andy-dev-shell-v' + cacheTimestamp;
 var dataCacheName = 'andy-dev-data-v' + cacheTimestamp;
 var filesToCache = [
@@ -9,8 +9,8 @@ var filesToCache = [
  '/contact/index.html',
  '/manifest.json',
  '/static/css/app.3b93d54270ea09ad67f6f9e263ee5f63.css',
- '/static/js/app.cf475317807028f2b8e3.js',
- '/static/js/manifest.119e568a9d85d5b4ad48.js',
+ '/static/js/app.fdd7d0a268a0fb82c186.js',
+ '/static/js/manifest.7336c9e8a639ac71fd10.js',
  '/static/js/vendor.ddc9bf5ab6e66ebc2731.js',
 ];
 
