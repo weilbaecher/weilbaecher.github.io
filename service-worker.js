@@ -1,4 +1,4 @@
-var cacheTimestamp = '1489886707218';
+var cacheTimestamp = '1490208406510';
 var cacheName = 'andy-dev-shell-v' + cacheTimestamp;
 var dataCacheName = 'andy-dev-data-v' + cacheTimestamp;
 var filesToCache = [
@@ -9,8 +9,8 @@ var filesToCache = [
  '/contact/index.html',
  '/manifest.json',
  '/static/css/app.3b93d54270ea09ad67f6f9e263ee5f63.css',
- '/static/js/app.fdd7d0a268a0fb82c186.js',
- '/static/js/manifest.7336c9e8a639ac71fd10.js',
+ '/static/js/app.337159d9a936781db488.js',
+ '/static/js/manifest.93452dfebd6c29e838ef.js',
  '/static/js/vendor.ddc9bf5ab6e66ebc2731.js',
 ];
 
@@ -39,7 +39,7 @@ self.addEventListener('activate', function(e) {
 	return self.clients.claim();
 });
 
-self.addEventListener('push', function(event) {
+self.addEventListener('push', function(event) { 
   console.log('Received a push message', event);
 
   var notificationOptions = {
