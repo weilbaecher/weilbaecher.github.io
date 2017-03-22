@@ -1,4 +1,4 @@
-var cacheTimestamp = '1490210834883';
+var cacheTimestamp = '1490217972362';
 var cacheName = 'andy-dev-shell-v' + cacheTimestamp;
 var dataCacheName = 'andy-dev-data-v' + cacheTimestamp;
 var filesToCache = [
@@ -9,8 +9,8 @@ var filesToCache = [
  '/contact/index.html',
  '/manifest.json',
  '/static/css/app.3b93d54270ea09ad67f6f9e263ee5f63.css',
- '/static/js/app.abeff9cdc7ce25ad261a.js',
- '/static/js/manifest.2acb07922c177c7467bd.js',
+ '/static/js/app.b8f5334bd745ef1452e4.js',
+ '/static/js/manifest.3a6007a36111b09b5b3d.js',
  '/static/js/vendor.ddc9bf5ab6e66ebc2731.js',
 ];
 
@@ -37,28 +37,6 @@ self.addEventListener('activate', function(e) {
 		})
 	);
 	return self.clients.claim();
-});
-
-self.addEventListener('push', function(event) { 
-  console.log('Received a push message', event);
-
-  var notificationOptions = {
-    body: 'Modular Scale in Responsive Web Design - Click here to check it out',
-    icon: './static/images/new-post.jpg',
-    tag: 'simple-push-demo-notification'
-  };
-
-  return self.registration.showNotification('Check Out My New Blog Post!', notificationOptions);
-});
-
-self.addEventListener('notificationclick', function(event) {
-  console.log('[Service Worker] Notification click Received.');
-
-  event.notification.close();
-
-  event.waitUntil(
-    clients.openWindow('https://blog.tatthien.com/post/development-tool')
-  );
 });
 
 self.addEventListener('fetch', function(e) {
