@@ -3,13 +3,6 @@
       appId: "d424c16f-ee2b-4a49-ae3f-e96953f99759",
       autoRegister: false,
       allowLocalhostAsSecureOrigin: true,
-      displayPredicate: function() {
-          return OneSignal.isPushNotificationsEnabled()
-              .then(function(isPushEnabled) {
-                  /* The user is subscribed, so we want to return "false" to hide the notify button */
-                  return !isPushEnabled;
-              });
-      },
       notifyButton: {
         enable: true,
         position: 'bottom-right', 
@@ -31,7 +24,22 @@
           'dialog.button.foreground': 'white'
         },
       },
-      showCredit: false,
+        prenotify: true, /* Show an icon with 1 unread message for first-time site visitors */
+        showCredit: false, /* Hide the OneSignal logo */
+        text: {
+            'tip.state.unsubscribed': 'Get Andy Updates',
+            'tip.state.subscribed': "You're subscribed to notifications",
+            'tip.state.blocked': "You've blocked notifications",
+            'message.prenotify': 'Click to subscribe to notifications',
+            'message.action.subscribed': "Thanks for subscribing!",
+            'message.action.resubscribed': "You're subscribed to notifications",
+            'message.action.unsubscribed': "You won't receive notifications again",
+            'dialog.main.title': "Andy Updates",
+            'dialog.main.button.subscribe': 'SUBSCRIBE',
+            'dialog.main.button.unsubscribe': 'UNSUBSCRIBE',
+            'dialog.blocked.title': 'Unblock Notifications',
+            'dialog.blocked.message': "Follow these instructions to allow notifications:"
+        },
       safari_web_id: 'web.onesignal.auto.147da6f8-95e8-4f3e-9e77-8dc52e1c58f0',
 
     }]);</script><link href="/static/css/app.4d5d74cc8cd2afb980ee1b091fad8551.css" rel="stylesheet"><style type="text/css"></style></head><body><noscript>Please enable Javascript in your browser.</noscript><div id="app"><div><header class="site-header"><div class="header-left"><a href="/" class="logo"><div class="logo-holder"></div></a></div> <div class="header-center"><div class="page-title-top"></div></div> <div></div> <div class="header-right"><nav><button class="nav-toggle"><span class="bar-top"></span> <span class="bar-mid"></span> <span class="bar-bot"></span></button></nav></div></header> <div class="mobile-menu" style="display: none;"><a href="/about" class=""><li>About</li></a> <a href="/resume" class=""><li>Resume</li></a> <a href="/work" class=""><li>Work</li></a> <a href="/contact" class="active"><li>Contact</li></a></div></div> <div class="main-content"><div><div><header class="site-header"><div class="header-left"><a href="/" class="logo"><div class="logo-holder"></div></a></div> <div class="header-center"><div class="page-title-top">Contact Me Today!</div></div> <div></div> <div class="header-right"><nav><button class="nav-toggle"><span class="bar-top"></span> <span class="bar-mid"></span> <span class="bar-bot"></span></button></nav></div></header> <div class="mobile-menu" style="display: none;"><a href="/about" class=""><li>About</li></a> <a href="/resume" class=""><li>Resume</li></a> <a href="/work" class=""><li>Work</li></a> <a href="/contact" class="active"><li>Contact</li></a></div></div> <div class="container single"><div class="posts"><article class="post"><h1 class="post-title">Contact Me</h1> <div class="post-meta"><span>tell me what's on your mind</span></div> <div data-v-3b85f8de="" class="center"><svg data-v-3b85f8de="" version="1.1" id="Layer_1" xmlns:x="&amp;ns_extend;" xmlns:i="&amp;ns_ai;" xmlns:graph="&amp;ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="303.792px" height="25.484px" viewBox="0 0 303.792 25.484" enable-background="new 0 0 303.792 25.484" xml:space="preserve" class="JaggedHr-svg"><switch data-v-3b85f8de=""><g data-v-3b85f8de="" i:extraneous="self"><polyline data-v-3b85f8de="" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1.873,2.742 14.915,22.742 27.958,2.742 
