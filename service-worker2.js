@@ -1,4 +1,4 @@
-var cacheTimestamp = '1490227084343';
+var cacheTimestamp = '1490229600374';
 var cacheName = 'andy-dev-shell-v' + cacheTimestamp;
 var dataCacheName = 'andy-dev-data-v' + cacheTimestamp;
 var filesToCache = [
