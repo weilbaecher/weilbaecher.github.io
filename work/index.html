@@ -2,11 +2,36 @@
     OneSignal.push(["init", {
       appId: "d424c16f-ee2b-4a49-ae3f-e96953f99759",
       autoRegister: false,
+      allowLocalhostAsSecureOrigin: true,
       notifyButton: {
-        enable: true /* Set to false to hide */
+        enable: true,
+        position: 'bottom-right', 
+        offset: {
+          bottom: '93px',
+          left: '0px', /* Only applied if bottom-left */
+          right: '43px' /* Only applied if bottom-right */
+        },
+        colors: { // Customize the colors of the main button and dialog popup button
+          'circle.background': 'rgb(0,0,0)',
+          'circle.foreground': 'white',
+          'badge.background': '#ffd400',
+          'badge.foreground': 'white',
+          'badge.bordercolor': 'white',
+          'pulse.color': 'white',
+          'dialog.button.background.hovering': '#ffd400',
+          'dialog.button.background.active': 'rgb(70, 92, 103)',
+          'dialog.button.background': '#ffd400',
+          'dialog.button.foreground': 'white'
+        },
+      },
+      httpPermissionRequest: {
+        modalTitle: 'Thanks for subscribing',
+        modalMessage: "You're now subscribed to notifications. You can unsubscribe at any time.",
+        modalButtonText: 'Close'
+        /* ... */
       },
       safari_web_id: 'web.onesignal.auto.147da6f8-95e8-4f3e-9e77-8dc52e1c58f0'
     }]);</script><link href="/static/css/app.4d5d74cc8cd2afb980ee1b091fad8551.css" rel="stylesheet"><style type="text/css"></style></head><body><noscript>Please enable Javascript in your browser.</noscript><div id="app"><div><header class="site-header"><div class="header-left"><a href="/" class="logo"><div class="logo-holder"></div></a></div> <div class="header-center"><div class="page-title-top"></div></div> <div></div> <div class="header-right"><nav><button class="nav-toggle"><span class="bar-top"></span> <span class="bar-mid"></span> <span class="bar-bot"></span></button></nav></div></header> <div class="mobile-menu" style="display: none;"><a href="/about" class=""><li>About</li></a> <a href="/resume" class=""><li>Resume</li></a> <a href="/work" class="active"><li>Work</li></a> <a href="/contact" class=""><li>Contact</li></a></div></div> <div class="main-content"><div><div><header class="site-header"><div class="header-left"><a href="/" class="logo"><div class="logo-holder"></div></a></div> <div class="header-center"><div class="page-title-top">Portfolio Items</div></div> <div></div> <div class="header-right"><nav><button class="nav-toggle"><span class="bar-top"></span> <span class="bar-mid"></span> <span class="bar-bot"></span></button></nav></div></header> <div class="mobile-menu" style="display: none;"><a href="/about" class=""><li>About</li></a> <a href="/resume" class=""><li>Resume</li></a> <a href="/work" class="active"><li>Work</li></a> <a href="/contact" class=""><li>Contact</li></a></div></div> <div class="container single"><div class="posts"><article class="post"><h1 class="post-title">My Work</h1> <div class="post-meta"><span>this is just a proof of concept for now. These images could be available offline.</span> <span>Visit <a href="https://nolaandy.github.io">https://nolaandy.github.io</a> for more examples.</span></div> <div data-v-3b85f8de="" class="center"><svg data-v-3b85f8de="" version="1.1" id="Layer_1" xmlns:x="&amp;ns_extend;" xmlns:i="&amp;ns_ai;" xmlns:graph="&amp;ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="303.792px" height="25.484px" viewBox="0 0 303.792 25.484" enable-background="new 0 0 303.792 25.484" xml:space="preserve" class="JaggedHr-svg"><switch data-v-3b85f8de=""><g data-v-3b85f8de="" i:extraneous="self"><polyline data-v-3b85f8de="" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1.873,2.742 14.915,22.742 27.958,2.742 
         40.999,22.742 54.042,2.742 67.083,22.742 80.126,2.742 93.167,22.742 106.205,2.742 119.246,22.742 132.29,2.742 145.331,22.742 
         158.372,2.742 171.414,22.742 184.458,2.742 197.502,22.742 210.547,2.742 223.591,22.742 236.632,2.742 249.674,22.742 
-        262.724,2.742 275.768,22.742 288.821,2.742 301.873,22.742     "></polyline></g></switch></svg></div> <div class="post-content center"><img src="/static/img/work-img-1.8a72406.jpg"> <img src="/static/img/work-img-2.3bb4408.jpg"> <img src="/static/img/work-img-6.a6b5a33.jpg"> <img src="/static/img/work-img-5.2292f8d.jpg"> <img src="/static/img/work-img-3.6055c5f.jpg"> <img src="/static/img/work-img-4.8f82264.jpg"></div></article></div></div></div></div> <div></div> <div class="nav-wrapper"><div class="triangles-above"></div> <nav class="bottomNav"><ul><a href="/about" class=""><li>About</li></a> <a href="/resume" class=""><li>Resume</li></a> <a href="/work" class="active"><li>Work</li></a> <a href="/contact" class=""><li>Contact</li></a></ul></nav></div></div><script type="text/javascript" src="/static/js/manifest.ccf0b415d532f9569c5c.js"></script><script type="text/javascript" src="/static/js/vendor.ddc9bf5ab6e66ebc2731.js"></script><script type="text/javascript" src="/static/js/app.58d95951d80f7dabf735.js"></script></body></html>
+        262.724,2.742 275.768,22.742 288.821,2.742 301.873,22.742     "></polyline></g></switch></svg></div> <div class="post-content center"><img src="/static/img/work-img-1.8a72406.jpg"> <img src="/static/img/work-img-2.3bb4408.jpg"> <img src="/static/img/work-img-6.a6b5a33.jpg"> <img src="/static/img/work-img-5.2292f8d.jpg"> <img src="/static/img/work-img-3.6055c5f.jpg"> <img src="/static/img/work-img-4.8f82264.jpg"></div></article></div></div></div></div> <div></div> <div class="nav-wrapper"><div class="triangles-above"></div> <nav class="bottomNav"><ul><a href="/about" class=""><li>About</li></a> <a href="/resume" class=""><li>Resume</li></a> <a href="/work" class="active"><li>Work</li></a> <a href="/contact" class=""><li>Contact</li></a></ul></nav></div></div><script type="text/javascript" src="/static/js/manifest.f64f77de6b445b37c6f7.js"></script><script type="text/javascript" src="/static/js/vendor.ddc9bf5ab6e66ebc2731.js"></script><script type="text/javascript" src="/static/js/app.2dc3b71c4c5b4ca1d90c.js"></script></body></html>
