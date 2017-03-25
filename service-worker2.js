@@ -1,4 +1,4 @@
-var cacheTimestamp = '1490410903894';
+var cacheTimestamp = '1490471091583';
 var cacheName = 'andy-dev-shell-v' + cacheTimestamp;
 var dataCacheName = 'andy-dev-data-v' + cacheTimestamp;
 var filesToCache = [
@@ -8,10 +8,10 @@ var filesToCache = [
  '/work/index.html',
  '/contact/index.html',
  '/manifest.json',
- '/static/css/app.97615502cfabff4ac51e0842fa2ce20c.css',
- '/static/js/app.c40f69d49830c663ab04.js',
- '/static/js/manifest.fa813201256e896c7ee7.js',
- '/static/js/vendor.58e0d5aeb9e4f510f58e.js',
+ '/static/css/app.35bb3ccf992b202a04633e827ec6566e.css',
+ '/static/js/app.305c0a36767f6c076ea7.js',
+ '/static/js/manifest.862df07372024c902cb2.js',
+ '/static/js/vendor.ddc9bf5ab6e66ebc2731.js',
 ];
 
 self.addEventListener('install', function(e) {
